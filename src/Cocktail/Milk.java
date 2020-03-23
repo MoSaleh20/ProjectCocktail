@@ -7,7 +7,7 @@ package Cocktail;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Milk extends Ingredients {
     public double volume=0;

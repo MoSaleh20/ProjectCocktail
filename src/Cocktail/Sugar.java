@@ -7,7 +7,7 @@ package Cocktail;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Sugar extends Ingredients {
 

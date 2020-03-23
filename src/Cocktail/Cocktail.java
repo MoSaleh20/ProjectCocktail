@@ -9,7 +9,7 @@ package Cocktail;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Cocktail {
 
@@ -19,7 +19,7 @@ public class Cocktail {
     public static void main(String[] args) {
        
         
-        Cup cup=new Cup(32);
+         Cup cup=new Cup(32);
         Blender blender=new Blender(100);
         Fruits fruit=new Fruits("Apple",20.0,10,11,123);
         Milk milk=new Milk("milk",15.0,237,242,251);

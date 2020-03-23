@@ -1,5 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
+ * To change  this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -7,7 +7,7 @@ package Cocktail;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & Ahmad Horyzat
  */
 public class Fruits extends Ingredients {
     public double volume=0;

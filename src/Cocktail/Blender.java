@@ -7,7 +7,7 @@ package Cocktail;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Blender {
     private double calories;
@@ -15,7 +15,7 @@ public class Blender {
     private String color;
     private String contents;
     private double volume=0;
-    private Color colorblender;
+     private Color colorblender;
 
     public Blender(double capacity) {
         this.capacity = capacity;

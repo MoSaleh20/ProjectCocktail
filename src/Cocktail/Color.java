@@ -7,12 +7,12 @@ package Cocktail;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Color {
     private int R,G,B;
 
-    public int getR() {
+     public int getR() {
         return R;
     }
 
