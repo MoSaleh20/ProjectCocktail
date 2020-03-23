@@ -10,13 +10,43 @@ package Cocktail;
  * @author 97259
  */
 public class Color {
-    public int R;
-    public int G;
-    public int B;
+    private int R,G,B;
+
+    public int getR() {
+        return R;
+    }
+
+    public void setR(int R) {
+        if (R>=0 & R<=255)
+        this.R = R;
+    }
+
+    public int getG() {
+        return G;
+    }
+
+    public void setG(int G) {
+        if (G>=0 & G<=255)
+         this.G = G;
+    }
+
+    public int getB() {
+        return B;
+    }
+
+    public void setB(int B) {
+        if (B>=0 & B<=255)
+        this.B = B;
+    }
 
     public Color(int R, int G, int B) {
+        if (R>=0 & R<=255)
         this.R = R;
+        
+        if (G>=0 & G<=255)
         this.G = G;
+        
+        if (B>=0 & B<=255)
         this.B = B;
     }
     

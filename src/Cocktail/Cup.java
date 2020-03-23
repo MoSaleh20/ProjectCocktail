@@ -16,7 +16,7 @@ public class Cup {
     public double volume=0;
 
     public Cup(double capacity) {
-        this.capacity = capacity;
+         this.capacity = capacity;
     }
     
     

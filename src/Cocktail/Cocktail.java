@@ -19,7 +19,7 @@ public class Cocktail {
     public static void main(String[] args) {
        
         
-        Cup cup=new Cup(30);
+        Cup cup=new Cup(31);
         Blender blender=new Blender(100);
         Fruits fruit=new Fruits("Apple",20.0,10,11,123);
         Milk milk=new Milk("milk",15.0,237,242,251);

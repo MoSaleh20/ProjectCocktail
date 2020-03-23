@@ -20,7 +20,9 @@ public class Milk extends Ingredients {
         super(name);
         this.volume=volume;
         this.calories=volume*30;
-        this.colormilk=new Color(a,b,c);
+//        this.colormilk.setR(a);
+//        this.colormilk.setR(b);
+//        this.colormilk.setR(c);
     }
 
     public double getVolume() {

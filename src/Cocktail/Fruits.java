@@ -21,7 +21,9 @@ public class Fruits extends Ingredients {
         super(name);
         this.volume=volume;
         this.calories=volume*60;
-        this.colorfruit=new Color(a,b,c);
+//        this.colorfruit.setR(a);
+//        this.colorfruit.setR(b);
+//        this.colorfruit.setR(c);
     }
 
     public double getVolume() {

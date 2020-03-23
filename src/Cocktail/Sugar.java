@@ -11,7 +11,7 @@ package Cocktail;
  */
 public class Sugar extends Ingredients {
 
-    public Sugar() {
+     public Sugar() {
     }
 
     public Sugar(String name, double volume) {
