@@ -20,7 +20,7 @@ public class Fruits extends Ingredients {
     public Fruits(String name, double volume,int a, int b, int c) {
         super(name);
         this.volume=volume;
-        this.calories=volume*60;
+         this.calories=volume*60;
 //        this.colorfruit.setR(a);
 //        this.colorfruit.setR(b);
 //        this.colorfruit.setR(c);

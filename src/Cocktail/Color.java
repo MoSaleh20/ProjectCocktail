@@ -18,7 +18,7 @@ public class Color {
 
     public void setR(int R) {
         if (R>=0 & R<=255)
-        this.R = R;
+         this.R = R;
     }
 
     public int getG() {

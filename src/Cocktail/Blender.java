@@ -63,7 +63,7 @@ public class Blender {
     
     public String getInfo(){        
         return "Volume = "+volume+"\n"+
-                   "Calories = "+calories+"\n";
+                    "Calories = "+calories+"\n";
 //                   "Color = "+colorblender.getR();
         
     }
