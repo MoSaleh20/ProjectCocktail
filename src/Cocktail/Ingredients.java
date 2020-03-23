@@ -10,7 +10,7 @@ package Cocktail;
  * @author MohammadSaleh & AhmadHoryzat
  */
 public abstract class Ingredients {
-    protected String name;
+     protected String name;
     protected double calories=0;
             
     public Ingredients() {
