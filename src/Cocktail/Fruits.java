@@ -25,9 +25,6 @@ public abstract class Fruits extends Ingredients {
 //        this.colorfruit.setR(c);
     }
 
-    public double getVolume() {
-        return volume;
-    }
 
     public void setVolume(double volume) {
         this.volume = volume;

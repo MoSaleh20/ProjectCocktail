@@ -19,5 +19,10 @@ public class Sugar extends Ingredients {
       public double getCalories(){
         return calories;
     }
-
+      
+@Override
+      public double getVolume(){
+        return 0;
+    }
+      
 }

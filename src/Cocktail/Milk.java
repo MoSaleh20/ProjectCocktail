@@ -23,14 +23,14 @@ public class Milk extends Ingredients {
 //        this.colormilk.setR(c);
     }
     
+    @Override
     public double getCalories(){
         return volume*30;
     }
 
-    public double getVolume() {
-        return volume;
-    }
+    
 
+    @Override
     public void setVolume(double volume) {
         this.volume = volume;
     }

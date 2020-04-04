@@ -1,5 +1,6 @@
 package Cocktail;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
@@ -20,6 +21,7 @@ public class Cocktail {
      */
     public static void main(String[] args) {
        Scanner in = new Scanner(System.in);
+       
         
         System.out.println("Enter blender capacity:");
         Blender blender=new Blender(in.nextDouble());

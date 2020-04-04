@@ -12,11 +12,15 @@ package Cocktail;
 public abstract class Ingredients {
     protected String name;
     protected double calories=0;
-            
+    protected double volume;
+    protected Color color;
+    
     public Ingredients() {
     }
 
-    
+    public abstract double getVolume();
+// public abstract double getColor();
+    public abstract double getCalories();
 
     public void setCalories(double calories) {
         this.calories = calories;
@@ -25,11 +29,18 @@ public abstract class Ingredients {
     public String getName() {
          return name;
     }
-    public abstract double getCalories();
+
     
     public void setName(String name) {
         this.name = name;
     }
 
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+    
+    public void setColor(Color color) {
+        this.color = color;
+    }
     
 }

@@ -5,6 +5,9 @@
  */
 package Cocktail;
 
+import java.util.ArrayList;
+
+
 /**
  *
  * @author MohammadSaleh & AhmadHoryzat
@@ -17,16 +20,22 @@ public class Blender {
     private Color colorblender;
     private boolean BlendDetector=false; 
     
+    private ArrayList<Ingredients> ingredient=new ArrayList<>();
+
+    
+    
     public Blender(double capacity) {
         this.capacity = capacity;
     }
-    
+
     public String Add(Sugar sugar){
 //    if  (volume<capacity)
 //    {
 ////        this.volume=fruit.getVolume()+milk.getVolume();
         this.calories+=sugar.getCalories();
+        this.ingredient.add(sugar);
         return "Added";
+       
 ////        this.contents=fruit.getVolume()+" of "+fruit.getName()+" and "+milk.getVolume()+" of "+milk;
 ////        return "added";
 //    }
@@ -34,11 +43,14 @@ public class Blender {
     }
     
     public boolean Add(Milk milk){
+        
     if  (volume<capacity)
         if ((capacity-volume)>milk.getVolume())
     {
         this.volume+=milk.getVolume();
         this.calories+=milk.getCalories();
+        this.ingredient.add(milk);
+
 //        this.contents=fruit.getVolume()+" of "+fruit.getName()+" and "+milk.getVolume()+" of "+milk;
         return true;
     }
@@ -52,43 +64,33 @@ public class Blender {
     {
         this.volume+=fruit.getVolume();
         this.calories+=fruit.getCalories();
+        this.ingredient.add(fruit);
         return "added";
         
     }
     return "over capacity";
     }
     
-//    public String Add(Fruits fruit,Milk milk,Sugar sugar){
-//    if  (volume<capacity)
-//    {
-//        this.volume=fruit.getVolume()+milk.getVolume();
-//        this.calories=fruit.getCalories()+milk.getCalories();
-//        this.contents=fruit.getVolume()+" of "+fruit.getName()+" and "+milk.getVolume()+" of "+milk;
-//        return "added";
-//    }
-//    return "over capacity";
-//    }
-    
-//    public void Add(Fruits fruit1,Fruits fruit2,Milk milk,Sugar sugar){
-//        double EmptySpace = capacity - volume;
-//    if  (volume<capacity) {
-//        if ( fruit1.getVolume()+fruit2.getVolume()+milk.getVolume()<=EmptySpace )
-//    {
-//        this.volume=fruit1.getVolume()+fruit2.getVolume()+milk.getVolume();
-//        this.calories=fruit1.getCalories()+fruit2.getCalories()+milk.getCalories();
-//        this.contents=fruit1.getVolume()+" of "+fruit1.getName()+" and "+fruit2.getVolume()+" of "+fruit2.getName()+" and "+milk.getVolume()+" of milk ";
-////        return "added";
-//    }
-//    }}
-//    return "over capacity";
-    
-
     public void Blend(){
             BlendDetector=true;
 //        this.colorblender.setR(Math.round((fr.getR()+mlk.getR())/2));
 //        this.colorblender.setG(Math.round((fr.getG()+mlk.getG())/2));
 //        this.colorblender.setB(Math.round((fr.getB()+mlk.getB())/2));
-//        
+            double SumCal=0;
+            double SumColor=0;
+            double SumVol=0;
+            for(Ingredients i:ingredient){
+                
+            try{
+            SumCal+=i.getCalories();
+            SumVol+=i.getVolume();}
+            catch(Exception e){
+                e.get
+            }
+            
+            }
+                
+             
     }
     
     public void Pour(Cup cup){
