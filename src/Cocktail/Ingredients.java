@@ -10,28 +10,23 @@ package Cocktail;
  * @author MohammadSaleh & AhmadHoryzat
  */
 public abstract class Ingredients {
-     protected String name;
+    protected String name;
     protected double calories=0;
             
     public Ingredients() {
     }
 
-    public double getCalories() {
-        return calories;
-    }
+    
 
     public void setCalories(double calories) {
         this.calories = calories;
     }
 
-    public Ingredients(String name) {
-         this.name = name;
-    }
-
     public String getName() {
          return name;
     }
-
+    public abstract double getCalories();
+    
     public void setName(String name) {
         this.name = name;
     }

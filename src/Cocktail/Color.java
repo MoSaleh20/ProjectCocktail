@@ -11,6 +11,14 @@ package Cocktail;
  */
 public class Color {
     private int R,G,B;
+    
+    public Color(int R, int G, int B) {
+        if (R>=0 & R<=255) {this.R = R;}
+        
+        if (G>=0 & G<=255) {this.G = G;}
+        
+        if (B>=0 & B<=255) {this.B = B;}
+    }
 
      public int getR() {
         return R;
@@ -39,15 +47,4 @@ public class Color {
         this.B = B;
     }
 
-    public Color(int R, int G, int B) {
-        if (R>=0 & R<=255)
-        this.R = R;
-        
-        if (G>=0 & G<=255)
-        this.G = G;
-        
-        if (B>=0 & B<=255)
-        this.B = B;
-    }
-    
 }

@@ -10,19 +10,21 @@ package Cocktail;
  * @author MohammadSaleh & AhmadHoryzat
  */
 public class Milk extends Ingredients {
-    public double volume=0;
+    public double volume;
     public Color colormilk;
     
     public Milk() {
     }
 
-    public Milk(String name, double volume,int a, int b, int c) {
-        super(name);
+    public Milk(double volume,int a, int b, int c) {
         this.volume=volume;
-         this.calories=volume*30;
 //        this.colormilk.setR(a);
-//        this.colormilk.setR(b);
+//         this.colormilk.setR(b);
 //        this.colormilk.setR(c);
+    }
+    
+    public double getCalories(){
+        return volume*30;
     }
 
     public double getVolume() {

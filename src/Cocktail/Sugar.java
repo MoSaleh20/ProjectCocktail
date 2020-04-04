@@ -12,12 +12,12 @@ package Cocktail;
 public class Sugar extends Ingredients {
 
       public Sugar() {
+          this.calories=10;
+    }
+      
+      @Override
+      public double getCalories(){
+        return calories;
     }
 
-    public Sugar(String name, double volume) {
-        super(name);
-        
-        this.calories=volume*38;
-    }
-    
 }

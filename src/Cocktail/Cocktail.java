@@ -1,5 +1,7 @@
 package Cocktail;
 
+import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,22 +19,136 @@ public class Cocktail {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+       Scanner in = new Scanner(System.in);
         
-         Cup cup=new Cup(32);
-        Blender blender=new Blender(100);
-        Fruits fruit=new Fruits("Apple",20.0,10,11,123);
-        Milk milk=new Milk("milk",15.0,237,242,251);
-        Sugar sugar=new Sugar("sugar",10.2);
-        blender.Add(fruit, milk, sugar);
-        blender.Blend(fruit.colorfruit, milk.colormilk);
-        System.out.println("Fruits Volume = "+fruit.getVolume());
-        System.out.println("Milk Volume = "+milk.getVolume());
-
-        System.out.println("blender before pour: "+blender.getInfo());
-        blender.Pour(cup);
-        System.out.println("blender after pour: "+blender.getInfo());
-        System.out.println("cup: "+cup.getInfo());
+        System.out.println("Enter blender capacity:");
+        Blender blender=new Blender(in.nextDouble());
+        System.out.println("Enter cup capacity: ");
+        Cup cup=new Cup(in.nextDouble());
+        
+        int choice,choice1 = 0;
+        do{
+            menu();
+           choice = in.nextInt();
+            switch(choice){
+                case 1:             
+                         int count=0;
+                            do{
+                                count++;
+                            menu1();
+                            choice1 = in.nextInt();
+                            switch(choice1){
+                                                  case 1:
+                                                            System.out.println("How many Grams? "); 
+                                                            Fruits fruit1=new Apple(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit1));
+                                                            break;
+                                                  case 2:
+                                                            System.out.println("How many Grams? "); 
+                                                            Fruits fruit2=new Banana(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit2));
+                                                            break;
+                                                  case 3:   
+                                                            System.out.println("How many Grams? "); 
+                                                            Fruits fruit3=new Almond(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit3));
+                                                            break;
+                                                  case 4:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit4=new Mango(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit4));
+                                                            break;
+                                                  case 5:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit5=new Berry(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit5));
+                                                            break;
+                                                  case 6:   
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit6=new Cherry(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit6));
+                                                            break;
+                                                  case 7:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit7=new Orange(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit7));
+                                                            break;
+                                                  case 8:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit8=new Grape(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit8));
+                                                            break;
+                                                  case 9:   
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit9=new Peach(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit9));
+                                                            break;
+                                                  case 10:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit10=new Pineapple(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit10));
+                                                            break;
+                                                  case 11:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit11=new Melon(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit11));
+                                                            break;
+                                                  case 12:
+                                                            System.out.println("How many Grams? ");
+                                                            Fruits fruit12=new Watermelon(in.nextDouble(),10,11,123);
+                                                            System.out.println(blender.Add(fruit12));
+                                                            break;
+                                                  case 13:count=10;}                                           
+                                        } while(count!=10);
+                                        break;
+                case 2:
+                                        System.out.println("How many millilitres? ");
+                                        try{
+                                        Milk milk=new Milk(in.nextDouble(),237,242,251);
+                                        blender.Add(milk);
+                                        }
+                                        catch(Exception e){
+                                            e.getMessage();
+                                        }                                                                    
+                    break;
+                 case 3:
+                                        Sugar sugar=new Sugar();
+                                        blender.Add(sugar);
+                    break;
+                 case 4:
+                                        System.out.println("blender before pour: \n"+blender.getInfo());
+                                        blender.Pour(cup);
+                                        System.out.println("blender after pour: \n"+blender.getInfo());
+                                        System.out.println("cup : \n"+cup.getInfo());
+                case 5: System.exit(0);
+        }} while(true);
     }
     
-}
+
+public static void menu(){
+        System.out.println("Please Enter your choice");
+        System.out.println("1. Add Fruit");
+        System.out.println("2. Add Milk");
+        System.out.println("3. Add Sugar");
+        System.out.println("4. Blend");
+        System.out.println("5. Exit");
+        
+    }
+public static void menu1(){
+        System.out.println("Please Enter your choice");
+        System.out.println("1. Add Apples");
+        System.out.println("2. Add Bananas");
+        System.out.println("3. Add Almond");
+        System.out.println("4. Add Mango");
+        System.out.println("5. Add Berry");
+        System.out.println("6. Add Cherry");
+        System.out.println("7. Add Orange");
+        System.out.println("8. Add Grape");
+        System.out.println("9. Add Peach");
+        System.out.println("10. Add Pineapple");
+        System.out.println("11. Add Melon");
+        System.out.println("12. Add Watermelon");
+        
+        System.out.println("13. That's Enough");
+        
+    }}

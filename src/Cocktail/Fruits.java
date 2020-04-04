@@ -9,18 +9,17 @@ package Cocktail;
  *
  * @author MohammadSaleh & Ahmad Horyzat
  */
-public class Fruits extends Ingredients {
-    public double volume=0;
+public abstract class Fruits extends Ingredients {
+    public double volume;
     public Color colorfruit;
     
     public Fruits() {
 
     }
 
-    public Fruits(String name, double volume,int a, int b, int c) {
-        super(name);
+    public Fruits( double volume,int a, int b, int c) {
         this.volume=volume;
-         this.calories=volume*60;
+
 //        this.colorfruit.setR(a);
 //        this.colorfruit.setR(b);
 //        this.colorfruit.setR(c);
@@ -34,4 +33,5 @@ public class Fruits extends Ingredients {
         this.volume = volume;
     }
     
+
 }
