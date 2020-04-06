@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cocktail;
+package Fruit;
 
+import cocktail1.Color;
+import cocktail1.Fruits;
 /**
  *
  * @author 97259
  */
 public class Melon extends Fruits {
 
-    public Melon() {
-    }
-
     //One gram of Melon approximately equals 1.34 ml.
-    public Melon(double volume, int a, int b, int c) {
-        super(volume*1.34, a, b, c);
+    public Melon(double volume) {
+        super(volume*1.34);
         name="Melon";
+        color.setR(234);
+        color.setG(177);
+        color.setB(74);
     }
     
     //One Liter of Melons approximately equals 0.25 kcal.
@@ -25,5 +27,12 @@ public class Melon extends Fruits {
     public double getCalories() {
         return volume*0.25;
     }
-    
+    @Override
+      public double getVolume(){
+        return volume*1.34;
+    }
+      @Override
+      public Color getColor(){
+        return color;
+    }
 }

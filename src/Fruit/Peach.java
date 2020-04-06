@@ -3,26 +3,36 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cocktail;
+package Fruit;
 
+import cocktail1.Color;
+import cocktail1.Fruits;
 /**
  *
  * @author 97259
  */
 public class Peach extends Fruits {
 
-    public Peach() {
-    }
-
     //One gram of Peaches approximately equals 0.87 ml.
-    public Peach(double volume, int a, int b, int c) {
-        super(volume*0.87, a, b, c);
+    public Peach(double volume) {
+        super(volume*0.87);
         name="Peach";
+        color.setR(255);
+        color.setG(203);
+        color.setB(164);
     }
     
-    //One Liter of Peaches approximately equals 0.75 kcal.
+    //One ml of Peaches approximately equals 0.75 kcal.
     @Override
     public double getCalories() {
         return volume*0.75;
+    }
+    @Override
+      public double getVolume(){
+        return volume*0.87;
+    }
+      @Override
+      public Color getColor(){
+        return color;
     }
 }

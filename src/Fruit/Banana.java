@@ -3,20 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cocktail;
+package Fruit;
+
+import cocktail1.Color;
+import cocktail1.Fruits;
 
 /**
  *
  * @author 97259
  */
 public class Banana extends Fruits {
-
-    public Banana() {
-    }
+            
 //One gram of Bananas approximately equals 1.58 ml.
-    public Banana(double volume, int a, int b, int c) {
-        super(volume*1.58, a, b, c);
+    public Banana(double volume) {
+        super(volume*1.58);
         name="Banana";
+        color.setR(254);
+        color.setG(229);
+        color.setB(40);
     }
     
     //One ml of Bananas approximately equals 0.56 kcal.
@@ -24,5 +28,12 @@ public class Banana extends Fruits {
     public double getCalories() {
         return volume*0.56;
     }
-    
+    @Override
+      public double getVolume(){
+        return volume*1.58;
+    }
+    @Override
+      public Color getColor(){
+        return color;
+    }
 }

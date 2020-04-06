@@ -3,21 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Cocktail;
+package cocktail1;
 
 /**
  *
- * @author MohammadSaleh & AhmadHoryzat
+ * @authors AhmadHoryzat & MohammadSaleh
  */
 public class Color {
-    private int R,G,B;
+    private int R;
+    private int G;
+    private int B;
+
+    public Color() {
+    }
     
     public Color(int R, int G, int B) {
-        if (R>=0 & R<=255) {this.R = R;}
-        
-        if (G>=0 & G<=255) {this.G = G;}
-        
-        if (B>=0 & B<=255) {this.B = B;}
+        setB(B);
+        setG(G);
+        setR(R);
     }
 
      public int getR() {
@@ -26,7 +29,9 @@ public class Color {
 
     public void setR(int R) {
         if (R>=0 & R<=255)
-         this.R = R;
+            this.R = R;
+        else
+            R = 0;
     }
 
     public int getG() {
@@ -35,7 +40,10 @@ public class Color {
 
     public void setG(int G) {
         if (G>=0 & G<=255)
-         this.G = G;
+            this.G = G;
+        else
+            G = 0;
+        
     }
 
     public int getB() {
@@ -44,7 +52,15 @@ public class Color {
 
     public void setB(int B) {
         if (B>=0 & B<=255)
-        this.B = B;
+            this.B = B;
+        else
+            B = 0;
     }
 
+    public String getInfo() {
+        return "Color ("+ R + "," + G + "," + B + ')';
+                
+    }
+    
+    
 }
