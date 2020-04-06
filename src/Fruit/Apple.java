@@ -16,7 +16,7 @@ public class Apple extends Fruits {
           
 //One grams of apples approximately equals 2.17 ml.
     public Apple(double volume) {
-        super(volume*2.17);
+        super(volume*2.17,254,37,27);
         name="Apple";
         color.setR(254);
         color.setG(37);

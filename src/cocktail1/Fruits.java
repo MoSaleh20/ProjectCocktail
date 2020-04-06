@@ -13,8 +13,8 @@ public abstract class Fruits extends Ingredients {
     protected double volume;
    
 
-    public Fruits( double volume) {
-        super("fruit");
+    public Fruits( double volume,int a, int b,int c) {
+        super("fruit",a,b,c);
         this.volume= volume;
     }
 

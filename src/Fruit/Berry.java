@@ -15,11 +15,8 @@ public class Berry extends Fruits {
 
     //One gram of Berries approximately equals 1.6 ml.
     public Berry(double volume) {
-        super(volume*1.6);
+        super(volume*1.6,31,48,80);
         name="Berry";
-        color.setR(31);
-        color.setG(48);
-        color.setB(80);
     }
 
     //One Liter of Berries approximately equals 0.36 kcal.

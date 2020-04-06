@@ -18,11 +18,8 @@ public class Almond extends Fruits {
        
     //One gram of Almonds approximately equals 1.65 ml.
     public Almond(double volume) {
-        super(volume*1.65);
-        name="Almond";
-        color.setR(255);
-        color.setG(234);
-        color.setB(203);
+        super(volume*1.65,255,234,203);
+        name="Almond";       
     }
     
     //One Liter of Almonds approximately equals 3.5 kcal.

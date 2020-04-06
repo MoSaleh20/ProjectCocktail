@@ -18,11 +18,9 @@ public class Watermelon extends Fruits {
 
     //One gram of Watermelon approximately equals 1.54 ml.
     public Watermelon(double volume) {
-        super(volume*1.54);
+        super(volume*1.54,188,68,69);
         name="Watermelon";
-        color.setR(188);
-        color.setG(68);
-        color.setB(69);
+
     }
     
     //One Liter of Watermelons approximately equals 0.2 kcal.

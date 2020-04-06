@@ -17,11 +17,9 @@ public class Mango extends Fruits {
 
    //One gram of Mangos approximately equals 1.43 ml.
     public Mango(double volume) {
-        super(volume*1.43);
+        super(volume*1.43,255,130,67);
         name="Mango";
-        color.setR(255);
-        color.setG(130);
-        color.setB(67);
+
     }
     
     //One Liter of Mangos approximately equals 0.42 kcal.

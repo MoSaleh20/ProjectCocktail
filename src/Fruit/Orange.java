@@ -16,11 +16,9 @@ public class Orange extends Fruits {
 
     //One gram of Oranges approximately equals 1.31 ml.
     public Orange(double volume) {
-        super(volume*1.31);
+        super(volume*1.31,255,168,54);
         name="Peach";
-        color.setR(255);
-        color.setG(168);
-        color.setB(54);
+
     }
     
     //One Liter of Oranges approximately equals 0.36 kcal.

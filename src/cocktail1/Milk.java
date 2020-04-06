@@ -13,11 +13,8 @@ public class Milk extends Ingredients {
     private double volume;
     
     public Milk(double volume,int r, int g, int b) {
-        super("milk");
+        super("milk",255,254,251);
         this.volume = volume;
-        color.setR(242);
-        color.setG(215);
-        color.setB(224);
     }
     
     @Override

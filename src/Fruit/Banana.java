@@ -16,11 +16,9 @@ public class Banana extends Fruits {
             
 //One gram of Bananas approximately equals 1.58 ml.
     public Banana(double volume) {
-        super(volume*1.58);
+        super(volume*1.58,254,229,40);
         name="Banana";
-        color.setR(254);
-        color.setG(229);
-        color.setB(40);
+
     }
     
     //One ml of Bananas approximately equals 0.56 kcal.

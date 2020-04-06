@@ -15,11 +15,9 @@ public class Cherry extends Fruits {
 
     //One gram of Cherries approximately equals 1.71 ml.
     public Cherry(double volume) {
-        super(volume*1.71);
+        super(volume*1.71,101,0,12);
         name="Cherry";
-        color.setR(101);
-        color.setG(0);
-        color.setB(12);
+
     }
     
     //One Liter of Cherries approximately equals 0.37 kcal.

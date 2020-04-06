@@ -15,11 +15,9 @@ public class Lemon extends Fruits {
 
     //One gram of Lemons approximately equals 2.46 ml.
     public Lemon(double volume) {
-        super(volume*2.46);
+        super(volume*2.46,255,244,78);
         name="Lemon";
-        color.setR(255);
-        color.setG(244);
-        color.setB(78);
+
     }  
     
     //One Liter of Lemons approximately equals 0.19 kcal.

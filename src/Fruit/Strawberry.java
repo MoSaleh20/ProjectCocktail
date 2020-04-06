@@ -16,11 +16,9 @@ public class Strawberry extends Fruits {
 
     //One gram of Lemons approximately equals 2.46 ml.
     public Strawberry(double volume) {
-        super(volume*1.96);
+        super(volume*1.96,225,5,33);
         name="Strawberry";
-        color.setR(225);
-        color.setG(5);
-        color.setB(33);
+
     }  
     
     //One Liter of Lemons approximately equals 0.19 kcal.

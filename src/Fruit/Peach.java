@@ -15,11 +15,9 @@ public class Peach extends Fruits {
 
     //One gram of Peaches approximately equals 0.87 ml.
     public Peach(double volume) {
-        super(volume*0.87);
+        super(volume*0.87,255,203,164);
         name="Peach";
-        color.setR(255);
-        color.setG(203);
-        color.setB(164);
+
     }
     
     //One ml of Peaches approximately equals 0.75 kcal.

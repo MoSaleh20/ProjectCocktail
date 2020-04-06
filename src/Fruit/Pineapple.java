@@ -15,11 +15,9 @@ public class Pineapple extends Fruits {
 
     //One gram of Pineapples approximately equals 0.99 ml.
     public Pineapple(double volume) {
-        super(volume*0.99);
+        super(volume*0.99,255,255,101);
         name="Pineapple";
-        color.setR(255);
-        color.setG(255);
-        color.setB(101);
+
     }
     
     //One Liter of Pineappless approximately equals 0.83 kcal.

@@ -15,11 +15,9 @@ public class Melon extends Fruits {
 
     //One gram of Melon approximately equals 1.34 ml.
     public Melon(double volume) {
-        super(volume*1.34);
+        super(volume*1.34,234,177,74);
         name="Melon";
-        color.setR(234);
-        color.setG(177);
-        color.setB(74);
+
     }
     
     //One Liter of Melons approximately equals 0.25 kcal.

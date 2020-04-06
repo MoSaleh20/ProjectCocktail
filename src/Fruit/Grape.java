@@ -15,11 +15,9 @@ public class Grape extends Fruits {
 
     //One kilo of Grapes approximately equals 2.57 ml.
     public Grape(double volume) {
-        super(volume*2.57);
+        super(volume*2.57,76,68,94);
         name="Grape";
-        color.setR(76);
-        color.setG(68);
-        color.setB(94);
+
         
     }
     

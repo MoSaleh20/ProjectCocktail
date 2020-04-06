@@ -12,7 +12,7 @@ package cocktail1;
 public class Sugar extends Ingredients {
 
     public Sugar() {
-        super("sugar");
+        super("sugar",0,0,0);
     }
       
     @Override
