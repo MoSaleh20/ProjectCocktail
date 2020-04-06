@@ -10,7 +10,7 @@ import cocktail1.Fruits;
 
 /**
  *
- * @author Mohammad Saleh 
+ * @author MohammadSaleh & AhmadHoryzat  
  */
 public class Almond extends Fruits {
 

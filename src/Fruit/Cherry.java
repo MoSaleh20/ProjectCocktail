@@ -9,7 +9,7 @@ import cocktail1.Color;
 import cocktail1.Fruits;
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Cherry extends Fruits {
 

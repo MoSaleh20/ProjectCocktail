@@ -10,7 +10,7 @@ import cocktail1.Color;
 
 /**
  *
- * @author 97259
+ * @author MohammadSaleh & AhmadHoryzat
  */
 public class Orange extends Fruits {
 
