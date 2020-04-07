@@ -25,7 +25,7 @@ public class Cup {
             this.calories = calories;
     }
     public double getCalories() {
-        return volume * 0.2;
+        return calories;
     }
 
     public double getCapacity() {

@@ -27,10 +27,6 @@ public class Blender {
         colorblender = new Color(0, 0, 0);
     }
 
-    public boolean isBlendDetector() {
-        return blendDetector[0] && blendDetector[1];
-    }
-
     public double getCapacity() {
         return capacity;
     }
@@ -83,7 +79,6 @@ public class Blender {
     
     
     public void Blend(){
-        blendDetector[2]=true;
        double sumVol = 0;
        double sumCal = 0;
        int r = 0;
@@ -118,6 +113,7 @@ public class Blender {
             volume = sumVol;
             calories = sumCal;
             colorblender = new Color(r, g, b);
+            blendDetector[2]=true;
             System.out.println("blender before pour: \n" + getInfo());
         }else{ 
             System.out.println("Your cocktail must contain fruits and milk!");
@@ -127,19 +123,19 @@ public class Blender {
     public void Pour(Cup cup){
         try{
             if (blendDetector[2]){
-            if(this.volume == 0){
-                throw new Exception("Blender is empty!");
-            }
+                if(this.volume == 0)
+                    throw new Exception("Blender is empty!");
             if(this.volume >= cup.getCapacity())
                 cup.setVolume(cup.getCapacity());
             else if(this.volume > 0)
                 cup.setVolume(volume);
-        
-            this.volume -= cup.getVolume();
-            cup.setCalories(cup.getVolume() * 0.2); 
+            
+            cup.setCalories(cup.getVolume() * this.calories / this.getVolume());
+            this.volume -= cup.getVolume(); 
             this.calories -= cup.getCalories();
             System.out.println("blender after pour: \n"+this.getInfo());
-                    System.out.println("cup : \n"+cup.getInfo());}
+                    System.out.println("cup : \n"+cup.getInfo());
+            }
             else 
                 throw new Exception("Please blend before pour!");
             

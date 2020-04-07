@@ -11,10 +11,10 @@ package cocktail1;
  */
 public class Milk extends Ingredients {
     private double volume;
-    
     public Milk(double volume,int r, int g, int b) {
-        super("milk",255,254,251);
+        super("milk", r, g, b);
         this.volume = volume;
+
     }
     
     @Override

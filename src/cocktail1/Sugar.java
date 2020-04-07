@@ -10,9 +10,9 @@ package cocktail1;
  * @authors AhmadHoryzat & MohammadSaleh
  */
 public class Sugar extends Ingredients {
-
+    
     public Sugar() {
-        super("sugar",0,0,0);
+        super("sugar", 255 , 255 ,255);
     }
       
     @Override

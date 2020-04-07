@@ -12,11 +12,11 @@ package cocktail1;
 public abstract class Fruits extends Ingredients {
     protected double volume;
    
-
-    public Fruits( double volume,int a, int b,int c) {
-        super("fruit",a,b,c);
+    public Fruits( double volume,int r, int g, int b) {
+        super("fruit", r, g, b);
         this.volume= volume;
     }
+
 
     public Color getColor() {
         return color;
@@ -27,7 +27,6 @@ public abstract class Fruits extends Ingredients {
     }
 
    
-
     public void setVolume(double volume) {
         if(volume > 0)
              this.volume = volume;

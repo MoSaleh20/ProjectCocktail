@@ -13,15 +13,14 @@ package cocktail1;
 public abstract class Ingredients {
     protected String name;
     protected double calories;
-    protected Color color;
+    protected Color color = new Color();
  
-    
-    public Ingredients(String name,int a,int b,int c) {
+    public Ingredients(String name, int r, int b, int g ) {
         this.name = name;
+        color = new Color(r, b, g);
         calories = 0;
-        color = new Color(a,b,c);
-        
     }
+    
 
     public void setCalories(double calories) {
         if(calories > 0)

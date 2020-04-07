@@ -8,7 +8,12 @@
 
 package cocktail1;
 
-import Fruit.*;
+import Fruit.Orange;
+import Fruit.Mango;
+import Fruit.Watermelon;
+import Fruit.Strawberry;
+import Fruit.Banana;
+import Fruit.Pineapple;
 import java.util.Scanner;
 
 /**
@@ -49,74 +54,36 @@ public class Cocktail1 {
                             switch(choice1){
                                                   case 1:
                                                             System.out.println("How many Grams? "); 
-                                                            Fruits fruit1=new Apple(in.nextDouble());
-                                                            blender.Add(fruit1);
-                                                            break;
-                                                  case 2:
-                                                            System.out.println("How many Grams? "); 
                                                             Fruits fruit2=new Banana(in.nextDouble());
                                                             blender.Add(fruit2);
                                                             break;
-                                                  case 3:   
-                                                            System.out.println("How many Grams? "); 
-                                                            Fruits fruit3=new Almond(in.nextDouble());
-                                                            blender.Add(fruit3);
-                                                            break;
-                                                  case 4:
+                                                  case 2:
                                                             System.out.println("How many Grams? ");
                                                             Fruits fruit4=new Mango(in.nextDouble());
                                                             blender.Add(fruit4);
                                                             break;
-                                                  case 5:
-                                                            System.out.println("How many Grams? ");
-                                                            Fruits fruit5=new Berry(in.nextDouble());
-                                                            blender.Add(fruit5);
-                                                            break;
-                                                  case 6:   
-                                                            System.out.println("How many Grams? ");
-                                                            Fruits fruit6=new Cherry(in.nextDouble());
-                                                            blender.Add(fruit6);
-                                                            break;
-                                                  case 7:
+                                                  case 3:   
                                                             System.out.println("How many Grams? ");
                                                             Fruits fruit7=new Orange(in.nextDouble());
                                                             blender.Add(fruit7);
                                                             break;
-                                                  case 8:
-                                                            System.out.println("How many Grams? ");
-                                                            Fruits fruit8=new Grape(in.nextDouble());
-                                                            blender.Add(fruit8);
-                                                            break;
-                                                  case 9:   
-                                                            System.out.println("How many Grams? ");
-                                                            Fruits fruit9=new Peach(in.nextDouble());
-                                                            blender.Add(fruit9);
-                                                            break;
-                                                  case 10:
+                                                  case 4:
                                                             System.out.println("How many Grams? ");
                                                             Fruits fruit10=new Pineapple(in.nextDouble());
                                                             blender.Add(fruit10);
                                                             break;
-                                                  case 11:
-                                                            System.out.println("How many Grams? ");
-                                                            Fruits fruit11=new Melon(in.nextDouble());
-                                                            blender.Add(fruit11);
-                                                            break;
-                                                  case 12:
-                                                            System.out.println("How many Grams? ");
+                                                  case 5:
+                                                           System.out.println("How many Grams? ");
                                                             Fruits fruit12=new Watermelon(in.nextDouble());
                                                             blender.Add(fruit12);
                                                             break;
-                                                  case 13:
-                                                      System.out.println("How many Grams? ");
-                                                            Fruits fruit13=new Lemon(in.nextDouble());
-                                                            blender.Add(fruit13);
-                                                            break;
-                                                  case 14:
-                                                      System.out.println("How many Grams? ");
+                                                  case 6:   
+                                                              System.out.println("How many Grams? ");
                                                             Fruits fruit14=new Strawberry(in.nextDouble());
                                                             blender.Add(fruit14);
                                                             break;
+                                                  
+                                                
                                                   case 0: count=10;}                                           
                                         } while(count!=10);
                                         break;
@@ -154,7 +121,6 @@ public class Cocktail1 {
     
     }
     public static void menu(){
-        System.out.println("Resources for Volume, Calories and Color: www.schemecolor.com, www.aqua-calc.com");
         System.out.println("Please Enter your choice");
         System.out.println("1. Add Fruit");
         System.out.println("2. Add Milk");
@@ -166,23 +132,14 @@ public class Cocktail1 {
     }
     
     public static void menu1(){
-        System.out.println("Please Enter your choice");
-        System.out.println("1. Add Apples");
-        System.out.println("2. Add Bananas");
-        System.out.println("3. Add Almond");
-        System.out.println("4. Add Mango");
-        System.out.println("5. Add Berry");
-        System.out.println("6. Add Cherry");
-        System.out.println("7. Add Orange");
-        System.out.println("8. Add Grape");
-        System.out.println("9. Add Peach");
-        System.out.println("10. Add Pineapple");
-        System.out.println("11. Add Melon/Cantaloupe");
-        System.out.println("12. Add Watermelon");      
-        System.out.println("12. Add Lemon");
-        System.out.println("12. Add Strawberry");
-        System.out.println("0. That's Enough");
-        
+        System.out.println("Please Enter your choice");     
+        System.out.println("1. Add Bananas");      
+        System.out.println("2. Add Mango");      
+        System.out.println("3. Add Orange");  
+        System.out.println("4. Add Pineapple");
+        System.out.println("5. Add Watermelon");      
+        System.out.println("6. Add Strawberry");
+        System.out.println("0. Enough Fruits");
     }
 
 }
