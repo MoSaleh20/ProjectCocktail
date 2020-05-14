@@ -14,11 +14,8 @@ import cocktail1.Fruits;
  */
 public class Strawberry extends Fruits {
 
-    //One gram of Lemons approximately equals 2.46 ml.
     public Strawberry(double volume) {
-        super(volume*1.96,225,5,33);
-        name="Strawberry";
-
+        super("Strawberry", volume, 225, 5, 33);
     }  
     
     //One Liter of Lemons approximately equals 0.19 kcal.
@@ -28,7 +25,7 @@ public class Strawberry extends Fruits {
     }
     @Override
       public double getVolume(){
-        return volume*1.96;
+          return volume;
     }
       @Override
       public Color getColor(){

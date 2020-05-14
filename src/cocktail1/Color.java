@@ -31,7 +31,7 @@ public class Color {
         if (R>=0 & R<=255)
             this.R = R;
         else
-            R = 0;
+            this.R = 0;
     }
 
     public int getG() {
@@ -42,7 +42,7 @@ public class Color {
         if (G>=0 & G<=255)
             this.G = G;
         else
-            G = 0;
+            this.G = 0;
         
     }
 
@@ -54,13 +54,16 @@ public class Color {
         if (B>=0 & B<=255)
             this.B = B;
         else
-            B = 0;
+            this.B = 0;
     }
 
     public String getInfo() {
         return "Color ("+ R + "," + G + "," + B + ')';
                 
     }
-    
+    public String Save() {
+        return R + "\n" + G + "\n" + B;
+                
+    }
     
 }

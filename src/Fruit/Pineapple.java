@@ -15,8 +15,7 @@ public class Pineapple extends Fruits {
 
     //One gram of Pineapples approximately equals 0.99 ml.
     public Pineapple(double volume) {
-        super(volume*0.99,255,255,101);
-        name="Pineapple";
+        super("Pineapple", volume,255,255,101);
 
     }
     
@@ -27,7 +26,7 @@ public class Pineapple extends Fruits {
     }
     @Override
       public double getVolume(){
-        return volume*0.99;
+          return volume;
     }
       @Override
       public Color getColor(){

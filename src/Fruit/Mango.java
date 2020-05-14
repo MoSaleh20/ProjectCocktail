@@ -15,10 +15,8 @@ import cocktail1.Fruits;
 public class Mango extends Fruits {
 
 
-   //One gram of Mangos approximately equals 1.43 ml.
     public Mango(double volume) {
-        super(volume*1.43,255,130,67);
-        name="Mango";
+        super("Mango", volume,255,130,67);
 
     }
     
@@ -29,7 +27,7 @@ public class Mango extends Fruits {
     }
     @Override
       public double getVolume(){
-        return volume*1.43;
+          return volume;
     }
       @Override
       public Color getColor(){

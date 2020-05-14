@@ -14,10 +14,9 @@ import cocktail1.Color;
  */
 public class Orange extends Fruits {
 
-    //One gram of Oranges approximately equals 1.31 ml.
+
     public Orange(double volume) {
-        super(volume*1.31,255,168,54);
-        name="Peach";
+        super("Orange", volume, 255,168,24);
 
     }
     
@@ -28,7 +27,7 @@ public class Orange extends Fruits {
     }
     @Override
       public double getVolume(){
-        return volume*1.31;
+          return volume;
     } 
     @Override
       public Color getColor(){

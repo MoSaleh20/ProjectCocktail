@@ -7,27 +7,27 @@ package Fruit;
 
 import cocktail1.Color;
 import cocktail1.Fruits;
+import java.io.Serializable;
 
 /**
  *
  * @author MohammadSaleh & AhmadHoryzat
  */
-public class Banana extends Fruits {
+public class Banana extends Fruits implements Serializable {
             
-//One gram of Bananas approximately equals 1.58 ml.
     public Banana(double volume) {
-        super(volume*1.58, 254,229,40);
-        name="Banana";
+        super("Banana", volume, 254,248,10);
     }
-    
-    //One ml of Bananas approximately equals 0.56 kcal.
+
     @Override
+    //One Liter of Banana approximately equals 0.42 kcal.
     public double getCalories() {
         return volume*0.56;
     }
+    
     @Override
       public double getVolume(){
-        return volume*1.58;
+          return volume;
     }
     @Override
       public Color getColor(){

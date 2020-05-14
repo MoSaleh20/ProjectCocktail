@@ -12,14 +12,12 @@ import cocktail1.Fruits;
  *
  * @author MohammadSaleh & AhmadHoryzat
  */
-public class Watermelon extends Fruits {
-
-        Color color= new Color(255,168,54);    
+public class Watermelon extends Fruits {   
 
     //One gram of Watermelon approximately equals 1.54 ml.
     public Watermelon(double volume) {
-        super(volume*1.54,188,68,69);
-        name="Watermelon";
+        super("Watermelon", volume, 225, 40, 40);
+//        name="Watermelon";
 
     }
     
@@ -30,7 +28,7 @@ public class Watermelon extends Fruits {
     }
     @Override
       public double getVolume(){
-        return volume*1.54;
+          return volume;
     }
       @Override
       public Color getColor(){

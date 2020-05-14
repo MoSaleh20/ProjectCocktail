@@ -5,16 +5,18 @@
  */
 package cocktail1;
 
+import java.io.Serializable;
+
 /**
  *
  * @authors AhmadHoryzat & MohammadSaleh
  */
-public class Milk extends Ingredients {
+public class Milk extends Ingredients implements Serializable{
     private double volume;
-    public Milk(double volume,int r, int g, int b) {
-        super("milk", r, g, b);
-        this.volume = volume;
-
+    public Milk(double volume) {
+        super("milk", 255, 249, 251);
+        setVolume(volume);
+        super.setCalories(getCalories());
     }
     
     @Override
@@ -35,10 +37,12 @@ public class Milk extends Ingredients {
     public void setVolume(double volume) {
         if(volume > 0)
             this.volume = volume;
+        else
+            this.volume = 0;
     }
     
     @Override
     public String getInfo() {
-        return super.getInfo() + "volume=" + volume + '}';
+        return super.getInfo() + ", volume=" + volume;
     }
 }

@@ -10,7 +10,7 @@ package cocktail1;
  *
  * @authors AhmadHoryzat & MohammadSaleh
  */
-public abstract class Ingredients {
+public abstract class Ingredients  {
     protected String name;
     protected double calories;
     protected Color color = new Color();
@@ -18,13 +18,14 @@ public abstract class Ingredients {
     public Ingredients(String name, int r, int b, int g ) {
         this.name = name;
         color = new Color(r, b, g);
-        calories = 0;
+        this.calories = 0;
     }
     
-
     public void setCalories(double calories) {
         if(calories > 0)
             this.calories = calories;
+        else
+            this.calories = 0;
     }
 
     public String getName() {
@@ -40,7 +41,9 @@ public abstract class Ingredients {
     }
 
     public String getInfo() {
-        return "name=" + name + ", calories=" + calories + ", color=" + color + '}';
+        return "name=" + name + ", calories=" + calories 
+                + ", color (" + color.getR() + ", " + color.getG() + ", "
+                + color.getB() + ")";
     }
   
 }

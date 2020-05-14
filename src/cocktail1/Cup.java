@@ -5,6 +5,7 @@
  */
 package cocktail1;
 
+
 /**
  *
  * @authors AhmadHoryzat & MohammadSaleh
@@ -12,17 +13,31 @@ package cocktail1;
 public class Cup {
     private double calories;
     private double capacity;
-    private double volume;
 
+    public Color getColorcup() {
+        return colorcup;
+    }
+
+    public void setColorcup(Color colorcup) {
+        this.colorcup = colorcup;
+    }
+    private double volume;
+    private Color colorcup;
+
+    public Cup() {
+    }
+    
     public Cup(double capacity) {
-          this.capacity = capacity;
-          volume = 0;
-          calories = 0;
+        setCapacity(capacity);
+        volume = 0;
+        calories = 0;
     }
     
     public void setCalories(double calories){
         if(calories > 0)
             this.calories = calories;
+        else
+            this.calories = 0;
     }
     public double getCalories() {
         return calories;
@@ -35,6 +50,8 @@ public class Cup {
     public void setCapacity(double capacity) {
         if(capacity > 0)
             this.capacity = capacity;
+        else
+            this.capacity = 0;
     }
 
     public double getVolume() {
@@ -44,11 +61,15 @@ public class Cup {
     public void setVolume(double volume) {
         if(volume >= 0)
             this.volume = volume;
+        else 
+            this.volume = 0;
     }
     
     public String getInfo(){        
-        return "Volume = "+this.volume+" "+
-                   "Calories = "+this.calories+"\n";
+        return "Capacity = "+ getCapacity()
+               + "\nVolume = "+this.volume
+               + "\n" + colorcup.getInfo()
+               + "\nCalories = "+this.calories+"\n";
         
     }
 }

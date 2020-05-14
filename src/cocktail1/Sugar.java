@@ -5,19 +5,22 @@
  */
 package cocktail1;
 
+import java.io.Serializable;
+
 /**
  *
  * @authors AhmadHoryzat & MohammadSaleh
  */
-public class Sugar extends Ingredients {
+public class Sugar extends Ingredients implements Serializable{
     
     public Sugar() {
         super("sugar", 255 , 255 ,255);
+        super.setCalories(getCalories());
     }
       
     @Override
     public double getCalories(){
-       return 10;
+       return 5;
     }
 
     @Override
@@ -27,7 +30,7 @@ public class Sugar extends Ingredients {
 
     @Override
     public String getInfo() {
-        return super.getInfo(); 
+        return super.getInfo() + ", volume= ignored "; 
     }
     @Override
       public Color getColor(){
